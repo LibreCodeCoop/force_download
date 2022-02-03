@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+	  xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+	<id>force_download</id>
+	<name>Force download</name>
+	<summary>Force download</summary>
+	<description>
+		Force download will simple force to download all associated apps
+	</description>
+	<version>0.0.1</version>
+	<licence>agpl</licence>
+	<author mail="vitor@php.rio" homepage="https://github.com/vitormattos">Vitor Mattos</author>
+	<namespace>ForceDownload</namespace>
+	<category>files</category>
+	<website>https://github.com/librecodecoop/force_download</website>
+	<bugs>https://github.com/librecodecoop/force_download/issues</bugs>
+	<repository type="git">https://github.com/librecodecoop/force_download.git</repository>
+	<screenshot small-thumbnail="https://raw.githubusercontent.com/librecodecoop/force_download/master/screenshots/1-small.png">https://raw.githubusercontent.com/librecodecoop/force_download/master/screenshots/1.png</screenshot>
+	<dependencies>
+		<nextcloud min-version="22" max-version="24"/>
+	</dependencies>
+	<repair-steps>
+		<uninstall>
+			<step>OCA\ForceDownload\Migration\UninstallStep</step>
+		</uninstall>
+	</repair-steps>
+</info>
